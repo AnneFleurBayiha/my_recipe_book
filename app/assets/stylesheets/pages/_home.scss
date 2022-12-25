@@ -1,4 +1,43 @@
 // Specific CSS for your home-page
 
+.home-body {
+  background-image: url("burger.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.title {
+  font-size: 120px;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  transition: 0.5s;
+  color:white;
+
+}
+
+.title:hover {
+ -webkit-text-stroke: 2px #fff;
+ color: transparent;
+
+}
 
 
+.home-btn {
+  color: white;
+  border: 2px solid white;
+  padding: 8px 24px;
+  width: 200px;
+  border-radius: 50px;
+  font-size: 24px;
+
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  text-decoration: none;
+}
+
+
+
+.home-btn {
+  opacity: 1;
+}
