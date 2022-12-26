@@ -1,1 +1,15 @@
 <%# FORM %>
+<div class="container">
+  <h2>Add a new recipe 🧑🏾‍🍳</h2>
+
+  <%= simple_form_for(@recipe) do |f| %>
+    <%= f.input :name %>
+    <%= f.input :description %>
+    <%= f.select :category, options_for_select(%w[dinner salad desert drink appetizer]) %>
+    <%= f.input :photo, as: :file %>
+    <%= f.submit %>
+  <% end %>
+
+  <%= link_to "Back to recipes", recipes_path %>
+
+</div>
